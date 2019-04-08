@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <conio.h>
+void main(){
+    int i;
+    int a;
+    int j;
+    int p=0;
+    printf("Enter Number\n");
+    scanf("%d",&a);
+    for(i=0;i<a;i++)
+    {
+        p=0;
+        for(j=0;j<i+1;j++)
+        {
+            p++;
+            printf("%d ",p);
+        }
+        printf("\n");
+    }
+    
+}
