@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+    int a;
+    int totalspace;
+    int sidespace;
+    int i;
+    int stars;
+    printf("Enter Number \n");
+    scanf("%d",&a);
+    totalspace=2*a-1;
+    
+    sidespace=(totalspace-1)/2;
+    
+    for(stars=0;stars<a;stars++)
+    {
+        for(i=0;i<sidespace;i++)
+    {
+        printf(" ");
+    }
+    for(i=0;i<stars+1;i++)
+    {
+        printf("*");
+        if(i<stars)
+        {
+            printf(" ");
+        }
+    }
+    for(i=0;i<sidespace;i++)
+    {
+        printf(" ");
+    }
+    printf("\n");
+    sidespace--;
+    }
+}
